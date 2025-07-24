@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Mini App Example</title>
+  <title>Тест апки</title>
   <script src="https://telegram.org/js/telegram-web-app.js"></script>
   <style>
     body {
@@ -22,14 +22,14 @@
   </style>
 </head>
 <body>
-  <h1>Привет из Mini App!</h1>
+  <h1>Вы были взломаны</h1>
   <p id="user"></p>
-  <button onclick="sendData()">Удалить телеграм</button>
+  <button onclick="sendData()">Восстановить доступ к аккаунту</button>
 
   <script>
     const tg = window.Telegram.WebApp;
     tg.expand();  // Открыть на весь экран
-    document.getElementById('user').textContent = `Пользователь: ${tg.initDataUnsafe.user?.first_name}`;
+    document.getElementById('user').textContent = `Ваше имя: ${tg.initDataUnsafe.user?.first_name}`;
 
     function sendData() {
       tg.sendData("Привет от Mini App!");  // Отправляет данные в on_web_app_data
